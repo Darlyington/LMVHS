@@ -16,11 +16,14 @@
             background-color: #ffffff;
             color: #333;
         }
-        header {
+         header {
             background-color: #00264d;
             color: gold;
             padding: 2rem;
             text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 5rem;
         }
         section {
             padding: 2rem;
@@ -112,16 +115,39 @@
     min-height: 100px;
   }
 
+  .navbar-brand {
+    align-items: left;
+    margin-left: 20px;
+    margin-right: 100px;
+    text-decoration: none;
+    
+    
+   
+  .header-text {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
     
     </style>
 </head>
 <body>
     <header>
-        <h1>LINGTON MULTI-VENDOR HUB SERVICES</h1>
-        <p>Expanding Frontiers. Empowering Growth.</p>
+
+      <a class="navbar-brand" href="index.html">
+            <img src="images/lingtonlogo (2).png" alt="Logo" width="100" height="50">
+            <p style="color: white" important!> BN 8583466 </p>
+        </a>
+        <div class="header-text">
+            <h1>LINGTON MULTI-VENDOR HUB SERVICES</h1>
+            <p>Expanding Frontiers. Empowering Growth.</p>
+        </div>
     </header>
 
     <section class="about">
+
+
         <h2>About Us</h2>
         <p>We are a dynamic, multipurpose Nigerian company offering expert services in Real Estate, Web Technology, Agriculture, and Financial Support. We empower individuals, businesses, and communities through sustainable and innovative solutions.</p>
     </section>
@@ -136,7 +162,7 @@
         </ul>
     </section>
 
-    <section class="mission">
+    <section class="mission ">
         <h2>Mission</h2>
         <p>To deliver transformative, sustainable services across multiple sectors with innovation, integrity, and excellence.</p>
 
