@@ -19,12 +19,41 @@
          header {
             background-color: #00264d;
             color: gold;
-            padding: 2rem;
+            padding: 1rem;
             text-align: center;
             display: flex;
             align-items: center;
-            gap: 5rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
+
+         .navbar-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+          .header-text {
+            flex-grow: 1;
+            text-align: center;
+            min-width: 250px;
+        }
+        
+        .header-text h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .header-text p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
         section {
             padding: 2rem;
             max-width: 1000px;
@@ -49,6 +78,31 @@
             padding: 1rem;
             border-left: 5px solid gold;
         }
+
+
+        .executives {
+          padding: 30px;
+          text-align: center;
+        }
+
+        .executives h2 {
+          text-align: left;
+        }
+         .team-member {
+            max-width: 350px; /* Constrain the card to a reasonable width */
+            margin: 0 auto;   /* Center the card within the section */
+        }
+        .team-member img {
+            width:100% ;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            display: block; 
+        }
+        
          .contact-section {
       max-width: 400px;
       margin: auto;
@@ -115,31 +169,102 @@
     min-height: 100px;
   }
 
-  .navbar-brand {
-    align-items: left;
-    margin-left: 20px;
-    margin-right: 10px;
-    text-decoration: none;
-     display: flex;
-    flex-direction: column;
-    align-items: center;
+  
     
-  .header-text {
-    flex-grow: 1;
-    text-align: center;
-  }
+  
 
     @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      gap: 0rem;
-      padding: 1.5rem 1rem;
-    }
-    .header-text h1 {
-      font-size: 1rem; /* Adjust heading size for smaller screens */
-    }
-  }
-}
+            header {
+                flex-direction: column;
+                padding: 1rem 0.5rem;
+                gap: 1rem;
+            }
+            
+            .navbar-brand {
+                order: 1;
+            }
+            
+            .header-text {
+                order: 2;
+                min-width: auto;
+            }
+            
+            .header-text h1 {
+                font-size: 1.4rem;
+                line-height: 1.3;
+            }
+            
+            .header-text p {
+                font-size: 0.9rem;
+            }
+            
+            section {
+                padding: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .services li {
+                padding: 0.8rem;
+                font-size: 0.9rem;
+            }
+            
+            .contact-section {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            .contact-item {
+                font-size: 0.9rem;
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            
+            .contact-item a {
+                text-align: center;
+            }
+        }
+        
+        /* Small Mobile Styles */
+        @media (max-width: 480px) {
+            .header-text h1 {
+                font-size: 1.2rem;
+            }
+            
+            .header-text p {
+                font-size: 0.8rem;
+            }
+            
+            section {
+                padding: 0.8rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            p {
+                font-size: 0.9rem;
+            }
+            
+            .services li {
+                padding: 0.6rem;
+                font-size: 0.8rem;
+            }
+            
+            .contact-section {
+                margin: 0.5rem;
+                padding: 0.8rem;
+            }
+            
+            input, textarea {
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+        } 
+  
+
 
     
     </style>
@@ -180,6 +305,20 @@
 
         <h2>Vision</h2>
         <p>To be a leading multi-vendor enterprise that bridges critical needs in real estate, tech, agriculture, and financial services across Africa.</p>
+    </section>
+
+    <section class="executives">
+      <div class="container">
+         <h2 class=" section-name"></h2>
+           <h2 class="section-title " >Meet our team</h2>
+        <div class="team-member">
+            <img src="images/ceo.JPG" alt="Photo of Ezema Darlyington, CEO">
+            <h4>Ezema Darlyington</h4>
+            <p>Chief Executive Officer</p>
+        </div>
+             </div>
+      </div>
+
     </section>
 
     <div class="contact-section ">
